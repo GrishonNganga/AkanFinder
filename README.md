@@ -1,4 +1,4 @@
-# {AkanFinder}
+# AkanFinder
 #### This website calculates the day of the week someone was born as well as finding their Akan Name.
 #### By **Grishon Ng'ang'a**
 ## Description
