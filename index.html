@@ -6,6 +6,7 @@
     <title>Akan Finder</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -30,7 +31,7 @@
         <div class="row">
             <div class="col-12 col-sm-6">
                 <div class="jumbotron">
-                    <form action="" class="form-inline">
+                    <form name="birthdayForm" action="" class="form-inline">
                         <label for="day">D.O.B</label>
                         <input type="number" id="day" placeholder="DD" name="day" class="form-control offset-1 col-3 col-md-2">
                         <input type="number" id="month" placeholder="MM" name="month" class="form-control col-3 col-sm-2 offset-md-1">
@@ -38,17 +39,54 @@
                         <label for="day" class="my-5">Gender</label>
                         <button type="button" class="btn btn-light offset-2" id="gender">Male</button>
                         <button type="button" class="btn btn-light offset-1" id="gender">Female</button>
-                        <button type="button" class="btn btn-success offset-sm-5 offset-5 offset-lg-5" id="submit">Submit</button>
+                        <div class="alert alert-danger" role="alert" id="danger-notif">
+                            Make sure you have provided all required information.
+                          </div>
+                        <button type="button" class="btn btn-success offset-sm-5 offset-5 offset-lg-5" id="submit" onclick="validate()">Submit</button>
                     </form>
                 </div>                    
             </div>
-            <div class="col-12 col-sm-6">
+            
+            <div class="col-12 col-sm-6 man">
                 <div class="jumbotron">
-                    <p>
-                        This is another one
-                    </p>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/man.jpg" alt="Man Photo">
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <p>Day: Tuesday</p>
+                            </div>
+                            <div class="row">
+                                <p>Akan: Abenaa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">   
+                    </div>
                 </div>
             </div>
+
+            <div class="col-12 col-sm-6 girl">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/girl.jpg" alt="Man Photo">
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <p>Day: Tuesday</p>
+                            </div>
+                            <div class="row">
+                                <p>Akan: Abenaa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">   
+                    </div>
+                </div>
+            </div>
+            
         </div>
         
     </div>

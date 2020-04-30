@@ -1,3 +1,6 @@
+body{
+    /* background-image: url("/images/bg.jpg") */
+}
 .navbar img{
     width: 70%;
     margin-left: 13%;
@@ -10,6 +13,15 @@
     text-align: center;
     font-size: 1.4em;
 }
+.girl, .man{
+    display: none;
+}
+.girl img, .man img{
+    width: 100%;
+}
+#danger-notif{
+    display: none;
+}
 @media(min-width: 600px){
     .navbar img{
         width: 40%;
@@ -19,6 +31,7 @@
 @media(min-width: 900px){
     .navbar img{
         width: 30%;
+        height: 50%;
         margin-left: 35%;
     }
 }
