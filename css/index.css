@@ -19,8 +19,11 @@ body{
 .girl img, .man img{
     width: 100%;
 }
-#danger-notif{
+#danger-notif, #gender-notif, #err-notif, #month-notif, #day-notif{
     display: none;
+}
+.offset{
+    margin-left: 3%;
 }
 @media(min-width: 600px){
     .navbar img{
