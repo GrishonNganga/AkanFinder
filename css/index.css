@@ -1,5 +1,5 @@
 body{
-     background-image: url("../images/bg.jpg");
+     background-image: url("bg.jpg");
      background-repeat: repeat-y;
 }
 .navbar img{
@@ -39,7 +39,7 @@ body{
         margin-left: 35%;
     }
     body{
-        background-image: url("../images/bg-large.jpg");
+        background-image: url("bg-large.jpg");
         background-repeat: repeat-y;
     }
 }
