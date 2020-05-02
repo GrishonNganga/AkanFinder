@@ -19,7 +19,7 @@ body{
 .girl img, .man img{
     width: 100%;
 }
-#danger-notif, #gender-notif, #err-notif, #month-notif, #day-notif{
+#danger-notif, #gender-notif, #year-notif, #month-notif, #day-notif{
     display: none;
 }
 .offset{
