@@ -137,6 +137,13 @@ function validNumbers(day, month, year, gender){
         yearErr.appendChild(text);
         yearErr.style.display = "inline";
         counter++;
+    }else if(year < 1900){
+        yearErr.innerHTML = "";
+        var text = document.createTextNode("Year can't be that old!");
+        document.getElementById('year').style.borderColor = "red";
+        yearErr.appendChild(text);
+        yearErr.style.display = "inline";
+        counter++;
     }else{
         if(yearErr.style.display == "inline"){
             yearErr.style.display = "none";
@@ -161,7 +168,7 @@ function findBirthday(day, month, year, gender){
     var monthCopy = parseInt(month,10); 
     //Year
     var year = parseInt(year,10);
-    
+
     if (month == 1) {
        monthCopy = 13;
        year = year-1;
