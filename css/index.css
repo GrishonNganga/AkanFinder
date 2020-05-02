@@ -1,6 +1,7 @@
-/* body{
-    /* background-image: url("/images/bg.jpg") */
-
+body{
+     background-image: url("../images/bg.jpg");
+     background-repeat: repeat-y;
+}
 .navbar img{
     width: 70%;
     margin-left: 13%;
@@ -36,5 +37,9 @@
         width: 30%;
         height: 50%;
         margin-left: 35%;
+    }
+    body{
+        background-image: url("../images/bg-large.jpg");
+        background-repeat: repeat-y;
     }
 }

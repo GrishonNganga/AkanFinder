@@ -203,7 +203,7 @@ function displayDay(gender, siku){
         var newNameText = document.createTextNode("Akan: " + newName);
         manAkan.appendChild(newNameText);
         document.getElementById('man').style.display = "inline";
-
+        document.getElementById('man').scrollIntoView();
     }else{
 
         //Hide the male div.
@@ -233,6 +233,7 @@ function displayDay(gender, siku){
         var newNameText = document.createTextNode("Akan: " +newName);
         girlAkan.appendChild(newNameText);
         document.getElementById('girl').style.display = "inline";
+        document.getElementById('girl').scrollIntoView();
     }
     
 }
