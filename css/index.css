@@ -1,6 +1,6 @@
-body{
+/* body{
     /* background-image: url("/images/bg.jpg") */
-}
+
 .navbar img{
     width: 70%;
     margin-left: 13%;
@@ -19,7 +19,7 @@ body{
 .girl img, .man img{
     width: 100%;
 }
-#danger-notif, #gender-notif, #err-notif, #month-notif, #day-notif{
+#danger-notif, #gender-notif, #year-notif, #month-notif, #day-notif{
     display: none;
 }
 .offset{
