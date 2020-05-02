@@ -105,7 +105,7 @@ function validNumbers(day, month, year, gender){
     var monthErr = document.getElementById('month-notif');
     var yearErr = document.getElementById('year-notif');
 
-    if (parseInt(day) < 1 || day > 31){
+    if (day < 1 || day > 31){
         dayErr.innerHTML = "";
         var text = document.createTextNode("Please correct your day. ");
         document.getElementById('day').style.borderColor = "red";
@@ -117,7 +117,7 @@ function validNumbers(day, month, year, gender){
             dayErr.style.display = "none";
         }
     }
-    if(parseInt(month) < 1 || month > 12){
+    if(month < 1 || month > 12){
         monthErr.innerHTML = "";
         var text = document.createTextNode("Please correct your month. ");
         document.getElementById('month').style.borderColor = "red";
@@ -151,24 +151,35 @@ function validNumbers(day, month, year, gender){
     }
     
 }
+//Algorithm that calculates the day of the week...
 function findBirthday(day, month, year, gender){
-    var cc = "";
-    var yy = "";
-    var mm = month;
-    var dd = day;
-    for(var i = 0; i <= 1; i++){
-        cc += year[i];
-    }
-    for(var i = 2; i <= 3; i++){
-        yy += year[i];
-    }
-    cc = parseInt(cc);
-    yy = parseInt(yy);
+    var days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+    //Day of the month.
+    var day = parseInt(day, 10); 
+    //Month of the year.
+    var month = parseInt(month, 10); 
+    var monthCopy = parseInt(month,10); 
+    //Year
+    var year = parseInt(year,10);
     
-    var day = Math.round((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd ) % 7);
-    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    console.log(days[day-1]);
-    var siku = days[day-1];
+    if (month == 1) {
+       monthCopy = 13;
+       year = year-1;
+    }
+    if (month == 2) {
+       monthCopy = 14;
+       year = year-1;
+    }
+    var val1 = parseInt(((monthCopy+1)*3)/5, 10);
+    var val2 = parseInt(year/4, 10);
+    var val3 = parseInt(year/100, 10);
+    var val4 = parseInt(year/400, 10);
+    var val5 = day+(monthCopy*2)+val1+year+val2-val3+val4+2;
+    var val6 = parseInt(val5/7, 10);
+    var val0 = val5-(val6*7);
+
+    var siku = days[val0];
+    
 
     displayDay(gender, siku);
 }
