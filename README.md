@@ -7,8 +7,8 @@ This web application, borrowing inspiration from the Ghanian culture, takes in s
 ## Setup/Installation Requirements
 
 ## Screenshots
-![Mobile Screenshot] (https://github.com/GrishonNganga/AkanFinder/blob/master/images/akan%20mb.PNG)
-![Desktop Screenshot] (https://github.com/GrishonNganga/AkanFinder/blob/master/images/akan%20dp%20(1).PNG)
+![Mobile Screenshot](https://github.com/GrishonNganga/AkanFinder/blob/master/images/akan%20mb.PNG)
+![Desktop Screenshot](https://github.com/GrishonNganga/AkanFinder/blob/master/images/akan%20dp%20(1).PNG)
 ## Known Bugs
 There are no known bugs. If any bugs are encountered, please feel free to contact me. Contact details on the Contact Details section below.
 ## Technologies Used
