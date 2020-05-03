@@ -1,11 +1,12 @@
 # AkanFinder
-#### This website calculates the day of the week someone was born as well as finding their Akan Name.
+* This website, given the day you were born, calculates the day of the week you were born as well as associated Akan Name.
 #### By **Grishon Ng'ang'a**
 ## Description
 An Akan name is a name children were given in the Ghanian culture that is derived from the day of the week they were born.
 This web application, borrowing inspiration from the Ghanian culture, takes in someone's birthday and gender and calculates the day of the week they were born as well as their Akan Name. 
 ## Setup/Installation Requirements
-
+` git clone https://github.com/GrishonNganga/AkanFinder `
+` cd /AkanFinder `
 ## Known Bugs
 There are no known bugs. If any bugs are encountered, please feel free to contact me. Contact details on the Contact Details section below.
 ## Technologies Used
