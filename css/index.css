@@ -1,5 +1,6 @@
 body{
-    /* background-image: url("/images/bg.jpg") */
+     background-image: url("../images/bg.jpg");
+     background-repeat: repeat-y;
 }
 .navbar img{
     width: 70%;
@@ -19,7 +20,7 @@ body{
 .girl img, .man img{
     width: 100%;
 }
-#danger-notif, #gender-notif, #err-notif, #month-notif, #day-notif{
+#danger-notif, #gender-notif, #year-notif, #month-notif, #day-notif{
     display: none;
 }
 .offset{
@@ -37,4 +38,15 @@ body{
         height: 50%;
         margin-left: 35%;
     }
+    body{
+        background-image: url("../images/bg-large.jpg");
+        background-repeat: repeat-y;
+    }
+}
+footer p{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
